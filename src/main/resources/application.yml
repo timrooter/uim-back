@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: internmanager
+  datasource:
+    url: jdbc:postgresql://ep-quiet-hill-a1x4z4sd-pooler.ap-southeast-1.aws.neon.tech:5432/uim?sslmode=require
+    username: uim_owner
+    password: npg_l4j0iPFGWUvT
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+  jackson:
+    serialization:
+      indent_output: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: J5vMPwH9tBz7dYvWhbQN4uTrxGCkUmcMkKqzFzpTx3Cq2XmnGEPYke4UzU6gJgLq
+  expiration: 86400000
+
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
